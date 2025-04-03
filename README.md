@@ -44,25 +44,25 @@ YTShare is a platform that simplifies YouTube video uploads for YouTubers and th
 4. Start the server:
    npm start
 
-   📈 Project Workflow
+📈 Project Workflow
 
-User Authentication & Authorization
-Uses JWT for secure user login and OAuth 2.0 for YouTube channel access.
-bcrypt is used for password hashing.
-YouTube API Integration
-Users link their YouTube channels via OAuth 2.0.
-The system generates unique access keys for editors to upload videos.
-File Upload & Management
-Multer middleware handles video uploads.
-Ensures data integrity and error handling for large files.
-Security Measures
-Password hashing with bcrypt.
-Access controls using JWT authentication and middleware-protected routes.
-Database security with separate tables for users, access keys, and video metadata.
-Performance Optimization
-Auto-scaling servers to handle traffic spikes.
-Minification, tree shaking, and lazy loading for frontend optimization.
-Database optimization using connection pooling and sharding.
+- User Authentication & Authorization
+- Uses JWT for secure user login and OAuth 2.0 for YouTube channel access.
+- bcrypt is used for password hashing.
+- YouTube API Integration
+- Users link their YouTube channels via OAuth 2.0.
+- The system generates unique access keys for editors to upload videos.
+- File Upload & Management
+- Multer middleware handles video uploads.
+- Ensures data integrity and error handling for large files.
+- Security Measures
+- Password hashing with bcrypt.
+- Access controls using JWT authentication and middleware-protected routes.
+- Database security with separate tables for users, access keys, and video metadata.
+- Performance Optimization
+- Auto-scaling servers to handle traffic spikes.
+- Minification, tree shaking, and lazy loading for frontend optimization.
+- Database optimization using connection pooling and sharding.
 
 🤝 Contributions
 
