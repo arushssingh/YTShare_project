@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT Share</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><img src="Designer.png" alt="Icon" style="vertical-align: middle; width: 50px; height: 50px; margin-right: 10px;"> YT Share</h1>
+        <nav>
+            <ul>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#youtube">YouTube Link</a></li>
+                <li><a href="#upload">Upload Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="youtube">
+        <h2>YouTube Channel Link</h2>
+        <div id="youtubeLinkContainer">
+            <a id="youtubeLink" href="#" target="_blank">Link Your YouTube Channel</a>
+            <p>Your unique key: <span id="uniqueKey"></span></p>
+        </div>
+    </section>
+
+    <section id="upload">
+        <h2>Upload Video</h2>
+        <form id="accessForm">
+            <label for="accessKey">Enter Access Key:</label>
+            <input type="text" id="accessKey" name="accessKey" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="uploadFormContainer" style="display: none;">
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label for="title">Video Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="video">Choose Video File:</label>
+                <input type="file" id="video" name="video" accept="video/*" required>
+                
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 YT Share. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
